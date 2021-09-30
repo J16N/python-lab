@@ -19,11 +19,27 @@ class Stack:
 
 
 my_stack = Stack()
-my_stack.push(1)
-my_stack.push(2)
-my_stack.push(3)
-my_stack.push(4)
-print("Size of Stack:", my_stack.size())
-print("Top element of Stack:", my_stack.peek())
-print("Popped element of Stack:", my_stack.pop())
-print("Size of Stack:", my_stack.size())
+print("-" * 10, "STACK OPERATIONS", "-" * 10)
+print("-" * 25)
+print("<1> To Insert Data.")
+print("<2> To Pop Data.")
+print("<3> Display the top element.")
+print("<0> Exit")
+
+while ((op := int(input())) != 0):
+    print(F"OP = {op}")
+    if (op == 1):
+        data = int(input("Enter the data: "))
+        my_stack.push(data)
+    
+    elif (op == 2):
+        try:
+            print("Popped element is: ", my_stack.pop())
+        except:
+            print("!!! Stack Underflow !!!")
+
+    elif (op == 3):
+        print("Top element is: ", my_stack.peek())
+    
+    else:
+        print("Invalid Option")
