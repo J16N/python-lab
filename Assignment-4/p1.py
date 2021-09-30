@@ -27,7 +27,6 @@ print("<3> Display the top element.")
 print("<0> Exit")
 
 while ((op := int(input())) != 0):
-    print(F"OP = {op}")
     if (op == 1):
         data = int(input("Enter the data: "))
         my_stack.push(data)
