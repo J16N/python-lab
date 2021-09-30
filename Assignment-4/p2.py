@@ -1,13 +1,14 @@
-reduce_str = lambda s: ''.join( 
-    s[i] for i in range(0, len(s)) 
-    if (i + 1 == len(s) or s[i] != s[i + 1])
-)
-
-def super_reduced(s):
-    new_string = reduce_str(s)
-    if len(new_string) == len(s):
-        return new_string
-    return super_reduced(new_string)
-
-s = input("Enter a string: ")
-print(super_reduced(s))
+tring='aaabccddd'
+li=[]
+for i in range(97,123):
+    x=string.count(chr(i))
+    li.append(x)
+final=[]
+count=0    
+for x in li:
+    if x>0:
+        if x%2!=0:
+            final.append(chr(count+97))
+    count+=1
+fstr = ' '.join([str(elem) for elem in final])
+print(fstr)
