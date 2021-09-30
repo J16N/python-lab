@@ -20,7 +20,7 @@ class Stack:
 
 my_stack = Stack()
 print("-" * 10, "STACK OPERATIONS", "-" * 10)
-print("-" * 25)
+print("-" * 38)
 print("<1> To Insert Data.")
 print("<2> To Pop Data.")
 print("<3> Display the top element.")

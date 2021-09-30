@@ -5,4 +5,4 @@ def reduced_str(s):
     return ''.join(k for k, v in c.items() if (v % 2 != 0))
 
 S = input("Enter a string: ")
-print(reduced_str(S))
+print("Reduced String:", reduced_str(S))
