@@ -13,6 +13,13 @@ def max_profit(A):
         if (i == len(A) - 2 and A[i] < A[i + 1]):
             max_prices.append(A[i + 1])
 
+        if (i == 1 and A[i - 1] < A[i]):
+            min_prices.append(A[i - 1])
+
+    if (len(A) == 2 and A[0] < A[1]):
+        max_prices.append( A[1] )
+        min_prices.append( A[0] )
+
     i = 1
     profit = 0
     for sp, cp in zip(max_prices, min_prices):
